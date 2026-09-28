@@ -17,10 +17,11 @@ $$
 Total execution latency is then formulated as:
 
 $$
-\begin{aligned}
-\text{Cycles}_{\text{SIGN}} &= \left( 2k \cdot 2^a + k(2^a - 1) \right) \cdot C_{\text{hash}} + C_{T_k} + \text{Overhead}_{\text{FSM}} \\
-\text{Cycles}_{\text{PK\_FROM\_SIG}} &= \left( k(a + 1) \right) \cdot C_{\text{hash}} + C_{T_k} + \text{Overhead}_{\text{FSM}}
-\end{aligned}
+\text{Cycles}_{\text{SIGN}} = \left( 2k \cdot 2^a + k(2^a - 1) \right) \cdot C_{\text{hash}} + C_{T_k} + \text{Overhead}_{\text{FSM}}
+$$
+
+$$
+\text{Cycles}_{\text{PK-FROM-SIG}} = \left( k(a + 1) \right) \cdot C_{\text{hash}} + C_{T_k} + \text{Overhead}_{\text{FSM}}
 $$
 
 For illustration only, under an idealized iterative permutation core where $C_{\text{perm}} = 24\text{ cycles}$ and $C_{\text{absorb}} \approx 2\text{ cycles}$ ($C_{\text{hash}} = 26\text{ cycles}$):
